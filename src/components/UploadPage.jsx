@@ -162,7 +162,7 @@ const UploadPage = () => {
         </button>
       </div>
 
-      <div>
+      <div className="d-flex justify-content-center>
         <img
           src="https://s3-alpha-sig.figma.com/img/a016/53d0/a23201c061509ea94063b2ca46164905?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ojOA1UGD8IleQZoNxwKE~Q8tnk2uBP~UHxHbCo~s0qfq3AyQ0WuDmlbj7huE04SotrhtyODAtgfDiURCFYIDpo-9LIhweULk77ESHB0UD5RFoYTE6wbZXpaNaUedEG1mBlhjYCMAdS7L9iHqjSrEgz1oAtOj1zJee7do0K4es4MwV2FpoNgkX6a7H~ghv2P98Zom6xrnE1EwezDCa9WEaUd1PUNJkqxiVDprULahQxBhVGNuabxHXJ5ZcbwdmWgy8UX927BrNYP8~9sa~-yY8Ydc5UFxSwwEZ8k~WB04camoJFzn-AB6zOlyIjIySgUznN~Gu6kcJtu7JG4WHJfr~A__"
           alt=""
