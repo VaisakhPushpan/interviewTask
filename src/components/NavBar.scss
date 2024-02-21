@@ -4,6 +4,8 @@
     justify-content: space-between;
     padding-top: 1rem;
     width: 100%;
+
+    
     .logo{
         img{
             height: 96px;
@@ -16,6 +18,7 @@
         align-items: center;
         div:nth-child(1){
             position: relative;
+            width: 100%;
         }
         .search-icon{
             position: absolute;
@@ -61,5 +64,16 @@
             border: none;
             color: #ffff;
         }
+    }
+}
+
+@media(max-width: 500px){
+    .logo{
+        display: none;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        gap: .5rem;
     }
 }
