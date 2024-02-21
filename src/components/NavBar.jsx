@@ -14,7 +14,7 @@ const NavBar = () => {
           alt=""
         />
       </div>
-      <div className="nav-links d-flex gap-2">
+      <div className="nav-links">
         <div>
           <input type="text" className="SearchBox" placeholder="Search..." />
           <FaSearch className="search-icon" />
