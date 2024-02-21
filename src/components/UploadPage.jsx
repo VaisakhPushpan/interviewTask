@@ -140,10 +140,11 @@ const UploadPage = () => {
           onChange={(e) => setDescription(e.target.value)}
           className="w-100 "
           style={{
-            border: "1px solid grey",
+            border: "1px solid #CF796C",
             outline: "none",
-            height: "2rem",
+            height: "45px",
             paddingLeft: "1rem",
+            borderRadius  : '15px'
           }}
           placeholder="Description..."
           type="text"
