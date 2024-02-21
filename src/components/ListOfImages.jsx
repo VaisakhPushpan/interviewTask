@@ -32,16 +32,25 @@ const ListOfImages = () => {
   };
 
   
-  id && useEffect(() => {
-      const q = query(doc(db, "userImages", id));
-      onSnapshot(q, (snapshot) => {
-        console.log(snapshot.data());
+ useEffect(() => {
+  // Check if id exists before fetching data
+  if (id) {
+    const q = query(doc(db, 'userImages', id));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      if (snapshot.exists()) {
         setSliderImage(snapshot.data());
-      });
-      console.log(sliderImage);
+      } else {
+        // Handle case where document doesn't exist
+        console.log('Document does not exist');
+      }
+    });
 
-    return () => (id = null);
-  }, []);
+    // Cleanup function
+    return () => {
+      unsubscribe(); // Unsubscribe from snapshot listener
+    };
+  }
+}, [id]);
 
   const imageLiked = async (item) => {
     let allUsers = item.like.likedUser;
