@@ -47,8 +47,8 @@
 
 @media(max-width : 500px){
   .upload-image{
-    img{
-      display: none;
-    }
+    flex-direction: column-reverse;
+    margin-top: 15rem;
+    gap: 5rem;
   }
 }
