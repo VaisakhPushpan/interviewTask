@@ -44,3 +44,14 @@
     object-fit: cover;
   }
 }
+
+@media(max-width : 500px){
+  .upload-image{
+    flex-direction: column-reverse;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 10rem;
+  }
+}
